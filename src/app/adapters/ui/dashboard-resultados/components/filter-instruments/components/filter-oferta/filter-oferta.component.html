@@ -1,0 +1,10 @@
+<select
+  class="w-full bg-primary py-2 pl-4 pr-4 rounded-lg outline-none border border-bg-border placeholder:opacity-50"
+  (input)="sendOferta($event)"
+>
+<option value=""> Seleccione una oferta </option>
+
+ @for (oferta of ofertaArray(); track oferta;) {
+   <option value="{{ oferta.id }}">{{ oferta.nombre }}</option>
+ }
+</select>

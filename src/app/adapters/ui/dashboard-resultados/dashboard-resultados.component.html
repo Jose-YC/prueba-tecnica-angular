@@ -1,0 +1,5 @@
+<div class="flex flex-col h-full p-8 bg-primary rounded-xl gap-6">
+  <app-statistics-instruments [estadisticas]="estadisticas()"></app-statistics-instruments>
+  <app-filter-instruments (outputFilters)="applyFilters($event)"></app-filter-instruments>
+  <app-list-instruments [filters] = 'filter()' [instruments]="instruments()" />
+</div>

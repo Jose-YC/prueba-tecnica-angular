@@ -1,0 +1,19 @@
+<div class="w-full max-w-6xl mx-auto p-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+    <div class="xl:col-span-1">
+      <app-filter-anio (anio)="applyAnio($event)"></app-filter-anio>
+    </div>
+    <div class="xl:col-span-1">
+      <app-filter-tipo (estado)="applyTipo($event)"></app-filter-tipo>
+    </div>
+    <div class="xl:col-span-1">
+      <app-filter-oferta (oferta)="applyOfertaFormativaId($event)"></app-filter-oferta>
+    </div>
+    <button
+    class="xl:col-span-1 px-4 py-2 rounded bg-secondary text-white rounde transition-colors"
+    (click)="resetFilters()"
+    >
+        Limpiar Filtros
+    </button>
+  </div>
+</div>

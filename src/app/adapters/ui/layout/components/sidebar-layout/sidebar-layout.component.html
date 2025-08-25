@@ -1,0 +1,25 @@
+<sidebar [isOpen]="isOpen()">
+  <sidebar-header>
+      <h2 class="uppercase text-[1rem] font-bold tracking-[1px]">
+          instrumentos sifods
+      </h2>
+  </sidebar-header>
+
+  <sidebar-content>
+    <sidebar-group>
+      <sidebar-group-label> menu </sidebar-group-label>
+      <sidebar-group-content>
+        <sidebar-menu>
+
+          <sidebar-menu-button [route]="'/'">
+            <sidebar-menu-item>
+              Dashboard
+            </sidebar-menu-item>
+          </sidebar-menu-button>
+
+        </sidebar-menu>
+      </sidebar-group-content>
+    </sidebar-group>
+  </sidebar-content>
+
+</sidebar>

@@ -1,0 +1,10 @@
+<select
+  class="w-full bg-primary py-2 pl-4 pr-4 rounded-lg outline-none border border-bg-border placeholder:opacity-50"
+  (input)="sendTipo($event)"
+>
+<option value=""> Seleccione un tipo </option>
+
+ @for (estado of estadoArray(); track estado;) {
+   <option value="{{ estado }}">{{ estado }}</option>
+ }
+</select>
