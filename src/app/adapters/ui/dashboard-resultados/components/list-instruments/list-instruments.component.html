@@ -8,6 +8,7 @@
         <th class="px-6 py-4 text-left text-xs font-semibold text-gray-900 uppercase">Entregas</th>
         <th class="px-6 py-4 text-left text-xs font-semibold text-gray-900 uppercase">Total Participantes</th>
         <th class="px-6 py-4 text-left text-xs font-semibold text-gray-900 uppercase">Oferta</th>
+        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-900 uppercase">Año</th>
       </tr>
     </thead>
     <tbody class="divide-y divide-bg-border">
@@ -25,6 +26,7 @@
           <td class="whitespace-nowrap px-6 py-4">{{ instrument.entregas }}</td>
           <td class="whitespace-nowrap px-6 py-4">{{ instrument.total_participantes }}</td>
           <td class="whitespace-nowrap px-6 py-4">{{ instrument.oferta.nombre }}</td>
+          <td class="whitespace-nowrap px-6 py-4">{{ instrument.fecha_creacion | date }}</td>
         </tr>
       }
       @empty {
@@ -57,3 +59,4 @@
     </tbody>
   </table>
 </div>
+

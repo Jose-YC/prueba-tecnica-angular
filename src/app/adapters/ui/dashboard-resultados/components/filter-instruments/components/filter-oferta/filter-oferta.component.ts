@@ -18,4 +18,8 @@ export class FilterOfertaComponent {
     this.searchOferta.set(event.target.value);
     this.oferta.emit(this.searchOferta());
   }
+
+  limpiar() {
+    this.searchOferta.set(null);
+  }
 }

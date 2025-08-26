@@ -18,4 +18,8 @@ export class FilterAnioComponent {
     this.searchAnio.set(parseInt(event.target.value));
     this.anio.emit(this.searchAnio());
   }
+
+  limpiar() {
+    this.searchAnio.set(0);
+  }
 }

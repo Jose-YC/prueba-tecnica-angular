@@ -18,4 +18,8 @@ export class FilterTipoComponent {
     this.searchTipo.set(event.target.value);
     this.estado.emit(this.searchTipo());
   }
+
+  limpiar() {
+    this.searchTipo.set(null);
+  }
 }
