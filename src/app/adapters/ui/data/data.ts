@@ -1,4 +1,3 @@
-
 import { EstadoInstrumento, OfertaFormativa, ResumenInstrumento, TipoInstrumento } from "../interface/dashboard.interface";
 
 export const anios: number[] = [2022, 2023, 2024, 2025];
@@ -119,7 +118,7 @@ export const instrumentos: ResumenInstrumento[] = [
     promedio_calificacion: 7.9,
     fecha_creacion: new Date("2024-10-15"),
     estado: EstadoInstrumento.FINALIZADO,
-    oferta: { id: "of4", nombre: "Certificación en Gestión de Proyectos" },
+    oferta: { id: "of1", nombre: "Diplomado en Transformación Digital" }, // Cambiado de of4 a of1
     total_participantes: 95,
     porcentaje_completitud: 96.8,
   },
@@ -131,7 +130,7 @@ export const instrumentos: ResumenInstrumento[] = [
     promedio_calificacion: null,
     fecha_creacion: new Date("2024-11-20"),
     estado: EstadoInstrumento.FINALIZADO,
-    oferta: { id: "of4", nombre: "Certificación en Gestión de Proyectos" },
+    oferta: { id: "of1", nombre: "Diplomado en Transformación Digital" }, // Cambiado de of4 a of1
     total_participantes: 95,
     porcentaje_completitud: 93.7,
   },
@@ -143,7 +142,7 @@ export const instrumentos: ResumenInstrumento[] = [
     promedio_calificacion: 8.1,
     fecha_creacion: new Date("2024-08-10"),
     estado: EstadoInstrumento.FINALIZADO,
-    oferta: { id: "of5", nombre: "Curso de Inteligencia Artificial" },
+    oferta: { id: "of2", nombre: "Curso de Analítica de Negocios" }, // Cambiado de of5 a of2
     total_participantes: 150,
     porcentaje_completitud: 94.7,
   },
@@ -155,7 +154,7 @@ export const instrumentos: ResumenInstrumento[] = [
     promedio_calificacion: null,
     fecha_creacion: new Date("2024-05-25"),
     estado: EstadoInstrumento.FINALIZADO,
-    oferta: { id: "of5", nombre: "Curso de Inteligencia Artificial" },
+    oferta: { id: "of2", nombre: "Curso de Analítica de Negocios" }, // Cambiado de of5 a of2
     total_participantes: 150,
     porcentaje_completitud: 98.7,
   },
@@ -167,7 +166,7 @@ export const instrumentos: ResumenInstrumento[] = [
     promedio_calificacion: 7.6,
     fecha_creacion: new Date("2024-10-01"),
     estado: EstadoInstrumento.FINALIZADO,
-    oferta: { id: "of5", nombre: "Curso de Inteligencia Artificial" },
+    oferta: { id: "of2", nombre: "Curso de Analítica de Negocios" }, // Cambiado de of5 a of2
     total_participantes: 150,
     porcentaje_completitud: 90.0,
   },
@@ -179,7 +178,7 @@ export const instrumentos: ResumenInstrumento[] = [
     promedio_calificacion: 8.3,
     fecha_creacion: new Date("2023-10-05"),
     estado: EstadoInstrumento.FINALIZADO,
-    oferta: { id: "of6", nombre: "Diplomado en Marketing Digital" },
+    oferta: { id: "of1", nombre: "Diplomado en Transformación Digital" }, // Cambiado de of6 a of1
     total_participantes: 85,
     porcentaje_completitud: 91.8,
   },
@@ -191,7 +190,7 @@ export const instrumentos: ResumenInstrumento[] = [
     promedio_calificacion: null,
     fecha_creacion: new Date("2023-09-15"),
     estado: EstadoInstrumento.FINALIZADO,
-    oferta: { id: "of6", nombre: "Diplomado en Marketing Digital" },
+    oferta: { id: "of1", nombre: "Diplomado en Transformación Digital" }, // Cambiado de of6 a of1
     total_participantes: 85,
     porcentaje_completitud: 96.5,
   },
@@ -203,7 +202,7 @@ export const instrumentos: ResumenInstrumento[] = [
     promedio_calificacion: 8.7,
     fecha_creacion: new Date("2023-12-10"),
     estado: EstadoInstrumento.FINALIZADO,
-    oferta: { id: "of6", nombre: "Diplomado en Marketing Digital" },
+    oferta: { id: "of1", nombre: "Diplomado en Transformación Digital" }, // Cambiado de of6 a of1
     total_participantes: 85,
     porcentaje_completitud: 95.3,
   },
@@ -215,7 +214,7 @@ export const instrumentos: ResumenInstrumento[] = [
     promedio_calificacion: 7.4,
     fecha_creacion: new Date("2022-11-15"),
     estado: EstadoInstrumento.INACTIVO,
-    oferta: { id: "of6", nombre: "Diplomado en Marketing Digital" },
+    oferta: { id: "of1", nombre: "Diplomado en Transformación Digital" }, // Cambiado de of6 a of1
     total_participantes: 50,
     porcentaje_completitud: 90.0,
   },
@@ -227,7 +226,7 @@ export const instrumentos: ResumenInstrumento[] = [
     promedio_calificacion: null,
     fecha_creacion: new Date("2022-06-20"),
     estado: EstadoInstrumento.FINALIZADO,
-    oferta: { id: "of4", nombre: "Certificación en Gestión de Proyectos" },
+    oferta: { id: "of1", nombre: "Diplomado en Transformación Digital" }, // Cambiado de of4 a of1
     total_participantes: 40,
     porcentaje_completitud: 95.0,
   },
@@ -251,7 +250,7 @@ export const instrumentos: ResumenInstrumento[] = [
     promedio_calificacion: null,
     fecha_creacion: new Date("2024-03-12"),
     estado: EstadoInstrumento.FINALIZADO,
-    oferta: { id: "of5", nombre: "Curso de Inteligencia Artificial" },
+    oferta: { id: "of2", nombre: "Curso de Analítica de Negocios" }, // Cambiado de of5 a of2
     total_participantes: 75,
     porcentaje_completitud: 89.3,
   },
@@ -275,7 +274,7 @@ export const instrumentos: ResumenInstrumento[] = [
     promedio_calificacion: null,
     fecha_creacion: new Date("2023-07-08"),
     estado: EstadoInstrumento.FINALIZADO,
-    oferta: { id: "of6", nombre: "Diplomado en Marketing Digital" },
+    oferta: { id: "of1", nombre: "Diplomado en Transformación Digital" }, // Cambiado de of6 a of1
     total_participantes: 95,
     porcentaje_completitud: 92.6,
   },
