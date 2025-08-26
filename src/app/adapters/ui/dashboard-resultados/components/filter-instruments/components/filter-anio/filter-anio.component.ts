@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input, output, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, input, output, signal } from '@angular/core';
 import { anios } from '../../../../../data/data';
 
 @Component({
@@ -9,17 +9,20 @@ import { anios } from '../../../../../data/data';
 })
 export class FilterAnioComponent {
   anio = output<number>();
+  inputAnio = input.required<number>();
+
   anioArray = signal<number[]>(anios);
   searchAnio = signal<number>(0);
 
-  ejemplo = input<string>('');
+  constructor() {
+    effect(() => {
+      const currentInputAnio = this.inputAnio();
+      this.searchAnio.set(currentInputAnio);
+    });
+  }
 
   sendAnio(event: any) {
     this.searchAnio.set(parseInt(event.target.value));
     this.anio.emit(this.searchAnio());
-  }
-
-  limpiar() {
-    this.searchAnio.set(0);
   }
 }

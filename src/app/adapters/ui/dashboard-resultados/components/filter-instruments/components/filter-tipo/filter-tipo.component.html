@@ -3,7 +3,7 @@
   [value]="searchTipo()"
   (input)="sendTipo($event)"
 >
-<option value=""> Seleccione un tipo </option>
+<option value="null"> Seleccione un tipo </option>
 
  @for (estado of estadoArray(); track estado;) {
    <option value="{{ estado }}">{{ estado }}</option>

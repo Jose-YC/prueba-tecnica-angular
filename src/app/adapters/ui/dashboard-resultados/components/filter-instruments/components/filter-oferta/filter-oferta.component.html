@@ -3,7 +3,7 @@
   [value]="searchOferta()"
   (input)="sendOferta($event)"
 >
-<option value=""> Seleccione una oferta </option>
+<option value="null"> Seleccione una oferta </option>
 
  @for (oferta of ofertaArray(); track oferta;) {
    <option value="{{ oferta.id }}">{{ oferta.nombre }}</option>

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, output, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, input, output, signal } from '@angular/core';
 import { TipoInstrumento } from '../../../../../interface/dashboard.interface';
 import { estadoInstrumento } from '../../../../../data/data';
 
@@ -10,16 +10,20 @@ import { estadoInstrumento } from '../../../../../data/data';
 })
 export class FilterTipoComponent {
   estado = output<TipoInstrumento | null>();
-  estadoArray = signal<TipoInstrumento[]>(estadoInstrumento);
+  inputEstado = input.required<TipoInstrumento | null>();
 
+  estadoArray = signal<TipoInstrumento[]>(estadoInstrumento);
   searchTipo = signal<TipoInstrumento | null>(null);
+
+  constructor() {
+    effect(() => {
+      const currentInputEstado = this.inputEstado();
+      this.searchTipo.set(currentInputEstado);
+    });
+  }
 
   sendTipo(event: any) {
     this.searchTipo.set(event.target.value);
     this.estado.emit(this.searchTipo());
-  }
-
-  limpiar() {
-    this.searchTipo.set(null);
   }
 }
