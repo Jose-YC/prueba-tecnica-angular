@@ -8,6 +8,7 @@ export class FilterOfertaPipe implements PipeTransform {
 
   transform(value: ResumenInstrumento[], ofertaId: string | null): ResumenInstrumento[] {
     if (!ofertaId) return value;
+    if (ofertaId === 'null') return value;
     return value.filter(instrumento => instrumento.oferta.id === ofertaId);
   }
 

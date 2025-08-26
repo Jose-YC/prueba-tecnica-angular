@@ -52,7 +52,7 @@ export class DashboardResultadosComponent {
 
     // si quieres excluir a los que tengan null del promedio general
     // const instrumentosFiltrados = this.instruments().filter(inst => inst.promedio_calificacion !== null);
-    // return instrumentosFiltrados.reduce((sum, inst) => sum + inst.promedio_calificacion!, 0) / instrumentosFiltrados.length;
+    // return instrumentosFiltrados.reduce((sum, inst) => sum + inst.promedio_calificacion!, 0) / this.getTotalInstruments() - instrumentosFiltrados.length;
   }
 
   getInstrumentosActivos(){
@@ -62,9 +62,4 @@ export class DashboardResultadosComponent {
   getInstrumentosFinalizados(){
     return this.instruments().filter(inst => inst.estado === EstadoInstrumento.FINALIZADO).length;
   }
-
-  getTasaParticipacion(){
-
-  }
-
 }
